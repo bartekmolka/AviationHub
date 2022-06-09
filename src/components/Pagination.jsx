@@ -1,7 +1,7 @@
 import React from "react";
 import Pagination from 'react-bootstrap/Pagination'
 import { useSearchParams } from 'react-router-dom'
-import GetData from "./GetAllData";
+import GetData from "./GetData";
 import * as styles from '../styles/Pagination.module.css'
 
 export default function PaginationContainer({ children, tabs, }) {
