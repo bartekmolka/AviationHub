@@ -1,8 +1,11 @@
 import React from "react";
 import DataTab from "../components/DataTab";
 import PaginationContainer from "../components/Pagination";
+import qs from 'qs'
 
-const data =  await fetch("http://localhost:3000/airports/all").then(res => res.json());
+parsed = qs.parse(window.location.search, { ignoreQueryPrefix: true })
+const { number } = await fetch(`http://localhost:3000/airports/number`).then(res => res.json());
+const data =  await fetch(`http://localhost:3000/airports/page/${parsed.p}`).then(res => res.json());
 
 const tabSize = 10;
 
@@ -12,7 +15,7 @@ export default function Data() {
     return (
         <div>
             <h1>Data</h1>
-            <PaginationContainer tabs={Math.ceil(data.length / tabSize)}>
+            <PaginationContainer tabs={Math.ceil(number / tabSize)}>
                 <DataTab data={data}/>
             </PaginationContainer>
         </div>

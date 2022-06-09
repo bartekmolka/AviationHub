@@ -7,7 +7,7 @@ export default function PaginationContainer({children, tabs, }) {
     for (let number = 1; number <= tabs; number++) {
     items.push(
         <Pagination.Item key={number} active={number === active}>
-            {number}
+            <a href={`/queries?p=${number}`}>{number}</a>
         </Pagination.Item>
     );
     }
