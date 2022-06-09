@@ -7,11 +7,11 @@ export default function DataTab({data}) {
         <Table striped bordered hover variant="light" responsive>
             <thead>
                 <tr>
-                    {Object.keys(data[0]).map(e => <th>{e}</th>)}
+                    {Object.keys(data[0]).map((e, i)=> <th key={i}>{e}</th>)}
                 </tr>
             </thead>
             <tbody>
-                {data.map(e => <tr>{Object.values(e).map(e => <td>{e}</td>)}</tr>)}
+                {data.map((e, i) => <tr key={i}>{Object.values(e).map((e, i) => <td key={i}>{e}</td>)}</tr>)}
             </tbody>
         </Table>
         </div>
