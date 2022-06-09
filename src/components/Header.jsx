@@ -16,7 +16,7 @@ export default function Header() {
         <Navbar.Brand href="#home" className={styles.main}>AviationHub</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link className="secondary" href="/">Home</Nav.Link>
-          <Nav.Link className="" href="/data">Dane</Nav.Link>
+          <Nav.Link className="" href="/data?p=1">Dane</Nav.Link>
         </Nav>
         <Nav><Navbar.Brand href="#home">
           <a href="https://github.com/n00sek/AviationHub-serwer">

@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap"
 export default function Main() {
   return (
     <div>
-      <h1 className="mx-auto">Strona główna</h1>
+      <h1 className="mx-auto">Home page</h1>
       <Card className="mx-auto" style={{ width: '18rem' }}>
         <Card.Img variant="top" src="https://as2.ftcdn.net/v2/jpg/02/71/78/29/1000_F_271782927_keMVFo9PnBwrMEmbiUGKRcDT2rzf85dj.jpg" />
         <Card.Body>
@@ -12,7 +12,7 @@ export default function Main() {
           <Card.Text>
             Simpleest way to find nearest airport
           </Card.Text>
-          <Button variant="primary"><a className="text-reset" href="/data">Search for airport</a></Button>
+          <Button variant="primary"><a className="text-reset" href="/data?p=1">Search for airport</a></Button>
         </Card.Body>
       </Card>
     </div>
