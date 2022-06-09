@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useSearchParams } from 'react-router-dom'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import * as styles from '../styles/GetAllData.module.css'
+import * as styles from '../styles/GetData.module.css'
 
 export default function GetData(params) {
     const [searchParams, setSearchParams] = useSearchParams();
