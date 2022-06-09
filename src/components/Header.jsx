@@ -5,8 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import Data from "../pages/Data";
 import Main from "../pages/Main";
 import { Routes, Router, Route } from "react-router-dom";
-import img from '../github.svg'
 import * as styles from '../styles/Header.module.css';
+
+import github from "../images/github.svg"
 
 export default function Header() {
   return (
@@ -20,7 +21,7 @@ export default function Header() {
         <Nav><Navbar.Brand href="#home">
           <a href="https://github.com/n00sek/AviationHub-serwer">
             <img
-              src={img}
+              src={github}
               width="50"
               height="50"
               alt="React Bootstrap logo"
