@@ -3,6 +3,7 @@ import Queries from './pages/Data'
 import Main from './pages/Main'
 import Header from './components/Header'
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [count, setCount] = useState(0)
