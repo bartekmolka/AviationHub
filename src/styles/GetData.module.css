@@ -1,0 +1,16 @@
+.searching {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    height: 20vh;
+}
+
+.input {
+    width: 70vw !important;
+}
+
+.form {
+    height: 15vh;
+    padding: 10%;
+    padding-top: 3%;
+}

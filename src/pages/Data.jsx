@@ -9,12 +9,9 @@ const data =  await fetch(`http://localhost:3000/airports/page/${parsed.p || 1}`
 
 const tabSize = 10;
 
-console.log(data);
-
 export default function Data() {
     return (
         <div>
-            <h1>Data</h1>
             <PaginationContainer tabs={Math.ceil(num.count / tabSize)}>
                 <DataTab data={data}/>
             </PaginationContainer>
