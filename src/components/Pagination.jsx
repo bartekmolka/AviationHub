@@ -1,5 +1,7 @@
 import React from "react";
-import { Pagination } from "react-bootstrap";
+import Pagination from 'react-bootstrap/Pagination'
+import PageItem from 'react-bootstrap/PageItem'
+
 
 export default function PaginationContainer({children, tabs, }) {
     let active = 2;
@@ -7,7 +9,7 @@ export default function PaginationContainer({children, tabs, }) {
     for (let number = 1; number <= tabs; number++) {
     items.push(
         <Pagination.Item key={number} active={number === active}>
-            <a href={`/queries?p=${number}`}>{number}</a>
+            <a href={`/data?p=${number}`}>{number}</a>
         </Pagination.Item>
     );
     }

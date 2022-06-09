@@ -9,7 +9,7 @@ const data =  await fetch(`http://localhost:3000/airports/page/${parsed.p || 1}`
 
 const tabSize = 10;
 
-console.log(num);
+console.log(data);
 
 export default function Data() {
     return (

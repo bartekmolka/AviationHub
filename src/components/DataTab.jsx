@@ -1,9 +1,10 @@
 import React from "react";
+import Table from 'react-bootstrap/Table'
 
 export default function DataTab({data}) {
     return (
         <div>
-        <table>
+        <Table striped bordered hover variant="light" responsive>
             <thead>
                 <tr>
                     {Object.keys(data[0]).map(e => <th>{e}</th>)}
@@ -12,7 +13,7 @@ export default function DataTab({data}) {
             <tbody>
                 {data.map(e => <tr>{Object.values(e).map(e => <td>{e}</td>)}</tr>)}
             </tbody>
-        </table>
+        </Table>
         </div>
     );
 }

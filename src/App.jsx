@@ -7,15 +7,13 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <BrowserRouter>
       <Header/>
         <Routes>
           <Route exact path='/' element={<Main/>} />
-          <Route path='/queries' element={<Data />} />
+          <Route path='/data' element={<Data />} />
         </Routes>
       </BrowserRouter>
     </div>
